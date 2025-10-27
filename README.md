@@ -53,7 +53,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 - Conducted statistical testing to identify upregulated genes
 - Applied multiple testing correction for robust gene identification
 
-**Output Location**: `results/expr0.5_genes3/`
+**Output Location**: `result/expr0.5_genes3/`
 
 ---
 
@@ -61,7 +61,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 
 ### Question 1: Subpopulation Characteristics
 
-![Target Subpopulation Overview](results/expr0.5_genes3/target_subpop_overview.png)
+![Target Subpopulation Overview](result/expr0.5_genes3/target_subpop_overview.png)
 
 **Key Findings**:
 - **Cell Count**: [107 cells identified]
@@ -71,7 +71,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 
 **Quality Control Comparison**:
 
-![QC Metrics](results/expr0.5_genes3/target_QC_metrics.png)
+![QC Metrics](result/expr0.5_genes3/target_QC_metrics.png)
 
 - **n_genes_by_counts**: p=6.009533e-26, d=1.18 - Target cells show slightly higher gene detection
 - **total_counts**: p=4.344208e-24, d=0.98 - Target cells have higher total UMI counts
@@ -82,7 +82,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 
 **Top 50 Upregulated Genes Heatmap**:
 
-![Heatmap of Top 50 DEGs](results/expr0.5_genes3/heatmap.png)
+![Heatmap of Top 50 DEGs](result/expr0.5_genes3/heatmap.png)
 
 The heatmap shows z-scored log1p expression of the top 50 upregulated genes across target cells (107 cells, red) versus other cells (500 cells sampled, blue). Clear enrichment patterns demonstrate the molecular distinctiveness of the target subpopulation.
 **Top Upregulated Genes**:
@@ -93,9 +93,9 @@ The heatmap shows z-scored log1p expression of the top 50 upregulated genes acro
 - **FEZF2**
 - **GABRQ**
 
-**Complete differential expression results**: `results/expr0.5_genes3/pseudobulk_upregulated_genes.csv`
+**Complete differential expression results**: `result/expr0.5_genes3/pseudobulk_upregulated_genes.csv`
 
-**Complete Results**: See `results/expr0.5_genes3/` directory for:
+**Complete Results**: See `result/expr0.5_genes3/` directory for:
 - Full differential expression table (CSV)
 - Additional visualization plots
 - Statistical summary files
