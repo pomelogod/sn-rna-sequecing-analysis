@@ -82,7 +82,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 
 **Top 50 Upregulated Genes Heatmap**:
 
-![Heatmap of Top 50 DEGs](result/expr0.5_genes3/heatmap.png)
+![Heatmap of Top 50 DEGs](result/expr0.5_genes3/Heatmap.png)
 
 The heatmap shows z-scored log1p expression of the top 50 upregulated genes across target cells (107 cells, red) versus other cells (500 cells sampled, blue). Clear enrichment patterns demonstrate the molecular distinctiveness of the target subpopulation.
 **Top Upregulated Genes**:
