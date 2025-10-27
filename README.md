@@ -1,16 +1,76 @@
-# sn-rna-sequecing-analysis
-Single-nucleus RNA sequencing (snRNA-seq) analysis to identify a neuronal subpopulation co-expressing GABRQ, ADRA1A, FEZF2, and VAT1L, and to determine its transcriptional characteristics through pseudobulk differential expression.
+# Single-nucleus RNA Sequencing Analysis
 
-Project Overview
+## Research Objectives
 
-This project aims to:
+This analysis aimed to address two key questions using single-nucleus RNA sequencing data:
 
-Identify the subpopulation of nuclei simultaneously expressing GABRQ, ADRA1A, FEZF2, and VAT1L within a single-nucleus RNA sequencing dataset.
+### 1. Identify and Characterize Target Subpopulation
 
-Characterize this subpopulation by calculating:
+**Goal**: Identify the neuronal subpopulation co-expressing four specific marker genes and characterize its properties.
 
-The number and proportion of nuclei in this group.
+**Target Marker Genes**:
+- GABRQ 
+- ADRA1A 
+- FEZF2 
+- VAT1L 
 
-Correlations with other annotated clusters.
+**Characterization metrics**:
+- Cell number and proportion
+- Correlation with other clusters
+- Expression patterns and distribution
 
-Determine the enriched (upregulated) genes in this subpopulation using pseudobulk differential expression analysis.
+### 2. Identify Enriched Genes in Target Subpopulation
+
+**Goal**: Determine which genes are significantly upregulated in the identified subpopulation compared to other cells.
+
+**Method**: Pseudobulk differential expression analysis
+
+---
+
+## Analysis Performed
+
+### Data Processing
+- Loaded Seurat object containing 35,309 cells and 36,503 genes
+- Converted data from RDS format to Matrix Market format for downstream analysis
+- Extracted count matrix, gene annotations, and cell metadata
+
+### Subpopulation Analysis
+- Identified cells co-expressing GABRQ, ADRA1A, FEZF2, and VAT1L
+- Quantified the number and proportion of target cells
+- Analyzed expression patterns of marker genes across the dataset
+- Assessed correlations between the target subpopulation and other cell clusters
+
+### Differential Expression Analysis
+- Performed pseudobulk aggregation for the target subpopulation
+- Conducted statistical testing to identify upregulated genes
+- Applied multiple testing correction for robust gene identification
+
+---
+
+## Results
+
+### Subpopulation Characteristics
+
+**[Results to be filled based on analysis outputs]**
+
+- **Cell Count**: [N cells]
+- **Proportion**: [X%] of total dataset
+- **Marker Expression**: [Description of co-expression patterns]
+- **Cluster Relationships**: [Correlation with other cell types]
+
+### Enriched Genes
+
+**[Results to be filled based on differential expression analysis]**
+
+**Top Upregulated Genes**:
+- [Gene 1]: [fold change, p-value]
+- [Gene 2]: [fold change, p-value]
+- [Gene 3]: [fold change, p-value]
+- [...]
+
+**Functional Interpretation**:
+- [Biological pathways enriched]
+- [Potential functional roles]
+- [Relationship to known neuronal subtypes]
+
+
