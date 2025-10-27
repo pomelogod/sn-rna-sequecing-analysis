@@ -79,7 +79,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 - **pct_counts_ribo**: p=1.515569e-03, d=-0.32 - Similar ribosomal content between groups
 
 ![Cluster Correlation](result/expr0.5_genes3/Cluster_Correlation.png)
-The target subpopulation shows highly significant enrichment in **Cluster 29** (Fisher's Exact Test: p < 1e-80, odds ratio ~84), with ~25% of this cluster consisting of target cells. Correlation analysis reveals that Cluster 29 exhibits the strongest positive correlation (Pearson r ~0.8) with the target subpopulation, followed by Clusters 12, 4, and 18. This indicates that the target cells form a transcriptomically coherent group that is predominantly but not exclusively localized to Cluster 29.
+The target subpopulation shows highly significant enrichment in **Cluster 29** , with ~25% of this cluster consisting of target cells. Correlation analysis reveals that Cluster 29 exhibits the strongest positive correlation with the target subpopulation, followed by Clusters 12, 4, and 18. This indicates that the target cells form a transcriptomically coherent group that is predominantly but not exclusively localized to Cluster 29.
 
 ### Question 2: Enriched Genes (expr0.5_genes3)
 
