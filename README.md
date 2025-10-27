@@ -62,7 +62,7 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 ### Question 1: Subpopulation Characteristics
 
 ![Target Subpopulation Overview](result/expr0.5_genes3/target_subpop_overview.png)
-
+![Gene Expression Overview](result/expr0.5_genes3/genes_expression.png)
 **Key Findings**:
 - **Cell Count**: 107 cells identified
 - **Proportion**: 0.3% of total dataset
