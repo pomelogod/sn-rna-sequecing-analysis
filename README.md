@@ -83,13 +83,13 @@ The target subpopulation shows highly significant enrichment in **Cluster 29** (
 
 ### Question 2: Enriched Genes (expr0.5_genes3)
 
-![Pseudobulk Analysis](results/expr0.5_genes3/Pseudobulk_Analysis.png)
+![Pseudobulk Analysis](result/expr0.5_genes3/Pseudobulk_Analysis.png)
 
 The volcano plot (left) shows 291 significantly upregulated genes in the target subpopulation. The bar plot (right) compares expression levels (CPM) of the top 20 upregulated genes between target and other cells, with VAT1L and ADRA1A showing the highest expression differences.
 
 **Marker Gene Expression Across All Clusters**:
 
-![Expression Across Clusters](results/expr0.5_genes3/Expression_Across_Clusters.png)
+![Expression Across Clusters](result/expr0.5_genes3/Expression_Across_Clusters.png)
 
 Dot plot showing the four marker genes (GABRQ, ADRA1A, FEZF2, and VAT1L) across all clusters. Cluster 29 shows the highest mean expression (dark red) and largest fraction of expressing cells (large dots) for all four markers, consistent with the enrichment analysis. Clusters 12, 18, and 21 also show moderate expression, aligning with correlation patterns.
 
