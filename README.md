@@ -1,6 +1,6 @@
 # Single-nucleus RNA Sequencing Analysis
 
-## Research Objectives
+## Project Objectives
 
 This analysis aimed to address two key questions using single-nucleus RNA sequencing data:
 
@@ -34,43 +34,70 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 - Converted data from RDS format to Matrix Market format for downstream analysis
 - Extracted count matrix, gene annotations, and cell metadata
 
-### Subpopulation Analysis
+### Question 1: Subpopulation Identification and Characterization
+
+**Analysis**:
 - Identified cells co-expressing GABRQ, ADRA1A, FEZF2, and VAT1L
 - Quantified the number and proportion of target cells
 - Analyzed expression patterns of marker genes across the dataset
 - Assessed correlations between the target subpopulation and other cell clusters
 
-### Differential Expression Analysis
+### Question 2: Differential Expression Analysis
+
+**Parameters Used**:
+- Minimum expression threshold: **0.5**
+- Minimum genes hit: **3**
+
+**Analysis**:
 - Performed pseudobulk aggregation for the target subpopulation
 - Conducted statistical testing to identify upregulated genes
 - Applied multiple testing correction for robust gene identification
+
+**Output Location**: `results/expr0.5_genes3/`
 
 ---
 
 ## Results
 
-### Subpopulation Characteristics
+### Question 1: Subpopulation Characteristics
 
-**[Results to be filled based on analysis outputs]**
+![Target Subpopulation Overview](results/expr0.5_genes3/target_subpop_overview.png)
 
-- **Cell Count**: [N cells]
-- **Proportion**: [X%] of total dataset
-- **Marker Expression**: [Description of co-expression patterns]
-- **Cluster Relationships**: [Correlation with other cell types]
+**Key Findings**:
+- **Cell Count**: [107 cells identified]
+- **Proportion**: [0.3%] of total dataset
+- **Marker Expression**: Co-expression of GABRQ, ADRA1A, FEZF2, and VAT1L defines a distinct subpopulation
+- **Spatial Distribution**: Target cells show specific clustering patterns in UMAP space
 
-### Enriched Genes
+**Quality Control Comparison**:
 
-**[Results to be filled based on differential expression analysis]**
+![QC Metrics](results/expr0.5_genes3/target_QC_metrics.png)
 
+- **n_genes_by_counts**: p=6.009533e-26, d=1.18 - Target cells show slightly higher gene detection
+- **total_counts**: p=4.344208e-24, d=0.98 - Target cells have higher total UMI counts
+- **pct_counts_mt**: p=5.200450e-12, d=0.60 - Moderate difference in mitochondrial content
+- **pct_counts_ribo**: p=1.515569e-03, d=-0.32 - Similar ribosomal content between groups
+
+### Question 2: Enriched Genes (expr0.5_genes3)
+
+**Top 50 Upregulated Genes Heatmap**:
+
+![Heatmap of Top 50 DEGs](results/expr0.5_genes3/heatmap.png)
+
+The heatmap shows z-scored log1p expression of the top 50 upregulated genes across target cells (107 cells, red) versus other cells (500 cells sampled, blue). Clear enrichment patterns demonstrate the molecular distinctiveness of the target subpopulation.
 **Top Upregulated Genes**:
-- [Gene 1]: [fold change, p-value]
-- [Gene 2]: [fold change, p-value]
-- [Gene 3]: [fold change, p-value]
-- [...]
+- **ENSG00000260951**
+- **LINC02964**
+- **LINC00922**
+- **LINC02424**
+- **FEZF2**
+- **GABRQ**
 
-**Functional Interpretation**:
-- [Biological pathways enriched]
-- [Potential functional roles]
-- [Relationship to known neuronal subtypes]
+**Complete differential expression results**: `results/expr0.5_genes3/pseudobulk_upregulated_genes.csv`
+
+**Complete Results**: See `results/expr0.5_genes3/` directory for:
+- Full differential expression table (CSV)
+- Additional visualization plots
+- Statistical summary files
 
 
