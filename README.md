@@ -64,8 +64,8 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 ![Target Subpopulation Overview](result/expr0.5_genes3/target_subpop_overview.png)
 
 **Key Findings**:
-- **Cell Count**: [107 cells identified]
-- **Proportion**: [0.3%] of total dataset
+- **Cell Count**: 107 cells identified
+- **Proportion**: 0.3% of total dataset
 - **Marker Expression**: Co-expression of GABRQ, ADRA1A, FEZF2, and VAT1L defines a distinct subpopulation
 - **Spatial Distribution**: Target cells show specific clustering patterns in UMAP space
 
@@ -78,7 +78,20 @@ This analysis aimed to address two key questions using single-nucleus RNA sequen
 - **pct_counts_mt**: p=5.200450e-12, d=0.60 - Moderate difference in mitochondrial content
 - **pct_counts_ribo**: p=1.515569e-03, d=-0.32 - Similar ribosomal content between groups
 
+![Cluster Correlation](result/expr0.5_genes3/Cluster_Correlation.png)
+The target subpopulation shows highly significant enrichment in **Cluster 29** (Fisher's Exact Test: p < 1e-80, odds ratio ~84), with ~25% of this cluster consisting of target cells. Correlation analysis reveals that Cluster 29 exhibits the strongest positive correlation (Pearson r ~0.8) with the target subpopulation, followed by Clusters 12, 4, and 18. This indicates that the target cells form a transcriptomically coherent group that is predominantly but not exclusively localized to Cluster 29.
+
 ### Question 2: Enriched Genes (expr0.5_genes3)
+
+![Pseudobulk Analysis](results/expr0.5_genes3/Pseudobulk_Analysis.png)
+
+The volcano plot (left) shows 291 significantly upregulated genes in the target subpopulation. The bar plot (right) compares expression levels (CPM) of the top 20 upregulated genes between target and other cells, with VAT1L and ADRA1A showing the highest expression differences.
+
+**Marker Gene Expression Across All Clusters**:
+
+![Expression Across Clusters](results/expr0.5_genes3/Expression_Across_Clusters.png)
+
+Dot plot showing the four marker genes (GABRQ, ADRA1A, FEZF2, and VAT1L) across all clusters. Cluster 29 shows the highest mean expression (dark red) and largest fraction of expressing cells (large dots) for all four markers, consistent with the enrichment analysis. Clusters 12, 18, and 21 also show moderate expression, aligning with correlation patterns.
 
 **Top 50 Upregulated Genes Heatmap**:
 
